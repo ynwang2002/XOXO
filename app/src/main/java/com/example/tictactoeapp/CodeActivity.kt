@@ -30,7 +30,7 @@ class CodeActivity : AppCompatActivity() {
             if(code != "null" && code != null && code != "") {
 
                 isCodeMaker = true;
-                FirebaseDatabase.getInstance().reference.child("codes").addValueEventListener(object  :ValueEventListener{
+                FirebaseDatabase.getInstance().reference.child("房間代碼").addValueEventListener(object  :ValueEventListener{
                     override fun onCancelled(error: DatabaseError) {
                         TODO("Not yet implemented")
                     }
@@ -48,12 +48,12 @@ class CodeActivity : AppCompatActivity() {
 
                                 }
                                 else{
-                                    FirebaseDatabase.getInstance().reference.child("codes").push().setValue(code)
+                                    FirebaseDatabase.getInstance().reference.child("房間代碼").push().setValue(code)
                                     isValueAvailable(snapshot,code)
                                     checkTemp = false
                                     Handler().postDelayed({
                                         accepted()
-                                        errorMsg("Please don't go back")
+                                        errorMsg("請不要離開")
                                     } , 300)
 
                                 }
@@ -72,7 +72,7 @@ class CodeActivity : AppCompatActivity() {
                 GameCode.visibility = View.VISIBLE
                 textView4.visibility = View.VISIBLE
                 progressBar.visibility = View.GONE
-                errorMsg("Enter Code Properly")
+                errorMsg("請正確輸入")
             }
         }
         Join.setOnClickListener{
@@ -88,7 +88,7 @@ class CodeActivity : AppCompatActivity() {
                 textView4.visibility = View.GONE
                 progressBar.visibility = View.VISIBLE
                 isCodeMaker = false;
-                FirebaseDatabase.getInstance().reference.child("codes").addValueEventListener(object:ValueEventListener{
+                FirebaseDatabase.getInstance().reference.child("房間代碼").addValueEventListener(object:ValueEventListener{
                     override fun onCancelled(error: DatabaseError) {
                         TODO("Not yet implemented")
                     }
@@ -112,7 +112,7 @@ class CodeActivity : AppCompatActivity() {
                                     GameCode.visibility = View.VISIBLE
                                     textView4.visibility = View.VISIBLE
                                     progressBar.visibility = View.GONE
-                                    errorMsg("Invalid Code")
+                                    errorMsg("不存在")
                                 }
                             } , 2000)
 
@@ -125,7 +125,7 @@ class CodeActivity : AppCompatActivity() {
             }
             else
             {
-                errorMsg("Enter Code Properly")
+                errorMsg("請正確輸入")
             }
         }
 

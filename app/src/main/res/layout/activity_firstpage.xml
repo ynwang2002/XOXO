@@ -4,27 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="#009688"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context=".Firstpage">
 
     <TextView
         android:id="@+id/textView3"
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tic Tac Toe"
-        android:textSize="25dp"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:gravity="center"
+        android:text="X O X O"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25dp" />
 
     <Button
         android:id="@+id/button11"
-        android:layout_marginTop="90dp"
-        android:gravity="center"
         android:layout_width="250dp"
-        android:background="#B2BCF8"
         android:layout_height="wrap_content"
-        android:text="Single Player" />
+        android:layout_marginTop="90dp"
+        android:background="#B2BCF8"
+        android:gravity="center"
+        android:text="與電腦競賽" />
 
     <Button
         android:id="@+id/button12"
@@ -33,5 +34,5 @@
         android:layout_marginTop="30dp"
         android:background="#B2BCF8"
         android:gravity="center"
-        android:text="Multi Player" />
+        android:text="與玩家競賽" />
 </LinearLayout>

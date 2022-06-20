@@ -20,7 +20,7 @@
             android:layout_width="132dp"
             android:layout_height="30dp"
             android:layout_marginLeft="40dp"
-            android:text="Turn : Player 1"
+            android:text="攻 : 玩家一"
             android:textColor="#000000"
             android:textSize="18dp" />
 
@@ -29,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_marginLeft="40dp"
-            android:text="Player1 : 0"
+            android:text="玩家1 : 0"
             android:textColor="#000000"
             android:textSize="18dp" />
 
@@ -38,7 +38,7 @@
             android:layout_width="110dp"
             android:layout_height="30dp"
             android:layout_marginLeft="30dp"
-            android:text="Player2 : 0"
+            android:text="玩家2 : 0"
             android:textColor="#000000"
             android:textSize="18dp" />
     </LinearLayout>
@@ -166,6 +166,6 @@
             android:id="@+id/button110"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Reset" />
+            android:text="重置" />
     </LinearLayout>
 </TableLayout>

@@ -184,12 +184,12 @@ class ThirdPage : AppCompatActivity() {
             Handler().postDelayed(Runnable { audio.release() } , 4000)
             val build = AlertDialog.Builder(this)
             build.setTitle("Game Over")
-            build.setMessage("Player 1 Wins!!" + "\n\n" + "Do you want to play again")
-            build.setPositiveButton("Ok") { dialog, which ->
+            build.setMessage("玩家 1 獲勝!!" + "\n\n" + "再來一局？")
+            build.setPositiveButton("再一局") { dialog, which ->
                 reset()
                 audio.release()
             }
-            build.setNegativeButton("Exit") { dialog, which ->
+            build.setNegativeButton("離開") { dialog, which ->
                 audio.release()
                 removeCode()
                 exitProcess(1)
@@ -211,12 +211,12 @@ class ThirdPage : AppCompatActivity() {
             Handler().postDelayed(Runnable { audio.release() } , 4000)
             val build = AlertDialog.Builder(this)
             build.setTitle("Game Over")
-            build.setMessage("Player 2 Wins!!" + "\n\n" + "Do you want to play again")
-            build.setPositiveButton("Ok"){dialog, which ->
+            build.setMessage("玩家 2 獲勝!!" + "\n\n" + "再來一局？")
+            build.setPositiveButton("再一局"){dialog, which ->
                 reset()
                 audio.release()
             }
-            build.setNegativeButton("Exit"){dialog, which ->
+            build.setNegativeButton("離開"){dialog, which ->
                 audio.release()
                 removeCode()
                 exitProcess(1)
@@ -229,12 +229,12 @@ class ThirdPage : AppCompatActivity() {
 
             val build = AlertDialog.Builder(this)
             build.setTitle("Game Draw")
-            build.setMessage("Nobody Wins" + "\n\n" + "Do you want to play again")
-            build.setPositiveButton("Ok"){dialog, which ->
+            build.setMessage("和局" + "\n\n" + "再來一局？")
+            build.setPositiveButton("再一局"){dialog, which ->
                 audio.release()
                 reset()
             }
-            build.setNegativeButton("Exit"){dialog, which ->
+            build.setNegativeButton("離開"){dialog, which ->
                 audio.release()
                 exitProcess(1)
                 removeCode()
@@ -326,7 +326,7 @@ class ThirdPage : AppCompatActivity() {
 
     fun removeCode(){
         if(isCodeMaker){
-            FirebaseDatabase.getInstance().reference.child("codes").child(keyValue).removeValue()
+            FirebaseDatabase.getInstance().reference.child("房間代碼").child(keyValue).removeValue()
         }
     }
 

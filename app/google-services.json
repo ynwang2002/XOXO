@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "777581206526",
+    "project_id": "tic-tac-toe-game-75ff2",
+    "storage_bucket": "tic-tac-toe-game-75ff2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777581206526:android:1a9a1cb935b85d24df7eaf",
+        "android_client_info": {
+          "package_name": "com.example.tictactoeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777581206526-knula9iru9tm6e23kfmnd9k2nf2sfht0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKtfmowfb9jo5ATZ-9sajkws7t_z_29nQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "777581206526-knula9iru9tm6e23kfmnd9k2nf2sfht0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777581206526:android:5679ea9c8b099734df7eaf",
+        "android_client_info": {
+          "package_name": "tw.edu.pu.gm.s109.ttt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777581206526-knula9iru9tm6e23kfmnd9k2nf2sfht0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKtfmowfb9jo5ATZ-9sajkws7t_z_29nQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "777581206526-knula9iru9tm6e23kfmnd9k2nf2sfht0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -109,12 +109,12 @@ class MainActivity : AppCompatActivity() {
             Handler().postDelayed(Runnable { audio.release() } , 4000)
             val build = AlertDialog.Builder(this)
             build.setTitle("Game Over")
-            build.setMessage("Player 1 Wins!!" + "\n\n" + "Do you want to play again")
-            build.setPositiveButton("Ok") { dialog, which ->
+            build.setMessage("玩家 1 獲勝!!" + "\n\n" + "再來一局?")
+            build.setPositiveButton("再一局") { dialog, which ->
                 reset()
                 audio.release()
             }
-            build.setNegativeButton("Exit") { dialog, which ->
+            build.setNegativeButton("離開") { dialog, which ->
                 audio.release()
                 exitProcess(1)
 
@@ -135,12 +135,12 @@ class MainActivity : AppCompatActivity() {
             Handler().postDelayed(Runnable { audio.release() } , 4000)
                 val build = AlertDialog.Builder(this)
                 build.setTitle("Game Over")
-                build.setMessage("Player 2 Wins!!" + "\n\n" + "Do you want to play again")
-                build.setPositiveButton("Ok"){dialog, which ->
+                build.setMessage("玩家 2 獲勝!!" + "\n\n" + "再來一局?")
+                build.setPositiveButton("再一局"){dialog, which ->
                     reset()
                     audio.release()
                 }
-                build.setNegativeButton("Exit"){dialog, which ->
+                build.setNegativeButton("離開"){dialog, which ->
                     audio.release()
                     exitProcess(1)
                 }
@@ -152,11 +152,11 @@ class MainActivity : AppCompatActivity() {
 
             val build = AlertDialog.Builder(this)
             build.setTitle("Game Draw")
-            build.setMessage("Nobody Wins" + "\n\n" + "Do you want to play again")
-            build.setPositiveButton("Ok"){dialog, which ->
+            build.setMessage("和局" + "\n\n" + "再來一局？")
+            build.setPositiveButton("再一局"){dialog, which ->
                 reset()
             }
-            build.setNegativeButton("Exit"){dialog, which ->
+            build.setNegativeButton("離開"){dialog, which ->
                 exitProcess(1)
             }
             build.show()
@@ -189,8 +189,8 @@ class MainActivity : AppCompatActivity() {
             }
             buttonselected.isEnabled = true
             buttonselected.text = ""
-            textView.text = "Player1 : $player1Count"
-            textView2.text = "Player2 : $player2Count"
+            textView.text = "玩家1 : $player1Count"
+            textView2.text = "玩家2 : $player2Count"
         }
     }
 
